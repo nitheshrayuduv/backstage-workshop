@@ -57,6 +57,9 @@ import {
 
 import { TechDocsAddons } from '@backstage/plugin-techdocs-react';
 import { ReportIssue } from '@backstage/plugin-techdocs-module-addons-contrib';
+import {
+    DaiDeployEntityDeploymentsContent
+} from '@digital-ai/plugin-dai-deploy';
 
 const techdocsContent = (
   <EntityTechdocsContent>
@@ -73,7 +76,9 @@ const cicdContent = (
     <EntitySwitch.Case if={isGithubActionsAvailable}>
       <EntityGithubActionsContent />
     </EntitySwitch.Case>
-
+      <EntitySwitch.Case>
+          <DaiDeployEntityDeploymentsContent />
+      </EntitySwitch.Case>
     <EntitySwitch.Case>
       <EmptyState
         title="No CI/CD available for this entity"
@@ -175,6 +180,9 @@ const serviceEntityPage = (
     <EntityLayout.Route path="/docs" title="Docs">
       {techdocsContent}
     </EntityLayout.Route>
+      <EntityLayout.Route path="/deploy" title="Deploy">
+          <DaiDeployEntityDeploymentsContent />
+      </EntityLayout.Route>
   </EntityLayout>
 );
 
@@ -202,6 +210,9 @@ const websiteEntityPage = (
     <EntityLayout.Route path="/docs" title="Docs">
       {techdocsContent}
     </EntityLayout.Route>
+      <EntityLayout.Route path="/deploy" title="Deploy">
+          <DaiDeployEntityDeploymentsContent />
+      </EntityLayout.Route>
   </EntityLayout>
 );
 

@@ -1,0 +1,5 @@
+apiVersion: xl-deploy/v1
+kind: Deployment
+spec:
+  package: Applications/backstage/test-cmd/1.0.0
+  environment: Environments/backstage/test-environment

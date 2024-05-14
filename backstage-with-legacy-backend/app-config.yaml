@@ -83,6 +83,8 @@ catalog:
       target: ../../examples/bank-entities.yaml
       rules:
         - allow: [ Domain, Group, User ]
+    - type: file
+      target: ../../examples/deploy-app-entities.yaml
     # Local example template
     - type: file
       target: ../../examples/template/template.yaml
@@ -107,3 +109,8 @@ catalog:
 
 permission:
   enabled: false
+
+daiDeploy:
+  host: http://localhost:4516
+  username: admin
+  password: desired-admin-password
