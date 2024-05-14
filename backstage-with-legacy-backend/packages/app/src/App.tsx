@@ -53,16 +53,6 @@ const app = createApp({
       catalogIndex: catalogPlugin.routes.catalogIndex,
     });
   },
-    components: {
-        SignInPage: props => (
-            <SignInPage
-                {...props}
-                providers={[
-                    'guest',
-                ]}
-            />
-        ),
-    },
 });
 
 const routes = (
