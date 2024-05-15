@@ -89,5 +89,6 @@ const customPermissionBackendModule = createBackendModule({
     },
 });
 backend.add(customPermissionBackendModule);
+backend.add(import('@digital-ai/plugin-dai-release-backend'));
 
 backend.start();

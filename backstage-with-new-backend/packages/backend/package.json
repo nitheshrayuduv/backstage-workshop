@@ -40,6 +40,7 @@
     "@backstage/plugin-techdocs-backend": "^1.10.4",
     "@digital-ai/plugin-dai-deploy-backend": "^0.1.2",
     "@digital-ai/plugin-dai-deploy-common": "^0.1.1",
+    "@digital-ai/plugin-dai-release-backend": "^0.1.0",
     "app": "link:../app",
     "better-sqlite3": "^9.0.0",
     "dockerode": "^3.3.1",

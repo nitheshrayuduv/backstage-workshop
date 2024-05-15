@@ -17,7 +17,7 @@ docker run  -v $(pwd):$(pwd) -w $(pwd) xebialabs/xl-client:24.1 apply -f deploy/
 Note: Before Running the above command please update  "http://deployhost:4516/" with actual deploy url.
 
 ## Setup Digital-ai Release [optional]
-### 1. Run the following command to run deploy in docker container. ![More details on docker images of xl-release](https://hub.docker.com/r/xebialabs/xl-release)
+### 1. Run the following command to run deploy in docker container. [More details on docker images of xl-release](https://hub.docker.com/r/xebialabs/xl-release)
 ```shell
 docker run -e "ADMIN_PASSWORD=admin" -e "ACCEPT_EULA=Y" -p 5516:5516 --name xlr-23.3 xebialabsunsupported/xl-release:24.1
 ```
@@ -60,6 +60,9 @@ daiDeploy:
   host: http://<deployhost>:4516
   username: 'admin'
   password: 'admin'
+daiRelease:
+  host: http://localhost:5516
+  token: rpa_862c5cd8b6e76f551d4f4b2e862e1e8a34be3972
 ```
 #### 3. Run the following command to start the backstage app with deploy plugin installed.
 ```shell

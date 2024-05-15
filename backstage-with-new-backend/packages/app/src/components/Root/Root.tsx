@@ -26,6 +26,7 @@ import {
 } from '@backstage/core-components';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
+import {ReleaseSvgIcon} from '@digital-ai/plugin-dai-release'
 
 const useSidebarLogoStyles = makeStyles({
   root: {
@@ -70,6 +71,10 @@ export const Root = ({ children }: PropsWithChildren<{}>) => (
         <SidebarItem icon={LibraryBooks} to="docs" text="Docs" />
         <SidebarItem icon={CreateComponentIcon} to="create" text="Create..." />
         {/* End global nav */}
+        <SidebarDivider />
+        <SidebarScrollWrapper>
+          <SidebarItem icon={ReleaseSvgIcon} to="dai-release" text="digital.ai release" />
+        </SidebarScrollWrapper>
         <SidebarDivider />
         <SidebarScrollWrapper>
           <SidebarItem icon={MapIcon} to="tech-radar" text="Tech Radar" />

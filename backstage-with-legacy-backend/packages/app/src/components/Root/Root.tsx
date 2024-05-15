@@ -73,9 +73,9 @@ export const Root = ({ children }: PropsWithChildren<{}>) => (
         {/* End global nav */}
         <SidebarDivider />
         <SidebarScrollWrapper>
-        <SidebarItem icon={ReleaseSvgIcon} to="dai-release" text="digital.ai release" />
+          <SidebarItem icon={ReleaseSvgIcon} to="dai-release" text="digital.ai release" />
         </SidebarScrollWrapper>
-        <SidebarDivider />s
+        <SidebarDivider />
         <SidebarScrollWrapper>
           <SidebarItem icon={MapIcon} to="tech-radar" text="Tech Radar" />
         </SidebarScrollWrapper>
