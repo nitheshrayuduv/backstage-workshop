@@ -114,3 +114,7 @@ daiDeploy:
   host: http://localhost:4516
   username: admin
   password: admin
+
+daiRelease:
+  host: http://localhost:5516
+  token: rpa_7541b0e5f265b2499bcf6753966b9664b944f3c0

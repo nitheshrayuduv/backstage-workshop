@@ -38,6 +38,7 @@
     "@backstage/plugin-search-backend-node": "^1.2.14",
     "@backstage/plugin-techdocs-backend": "^1.9.3",
     "@digital-ai/plugin-dai-deploy-backend": "^0.1.2",
+    "@digital-ai/plugin-dai-release-backend": "^0.1.0",
     "app": "link:../app",
     "better-sqlite3": "^9.0.0",
     "dockerode": "^3.3.1",
