@@ -12,6 +12,8 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: online-banking
+  annotations:
+    dai-deploy/ci-id: 'test-cmd'
 spec:
   type: website
   lifecycle: experimental

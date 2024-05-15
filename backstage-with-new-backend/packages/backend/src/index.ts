@@ -16,6 +16,9 @@ import {policyExtensionPoint} from "@backstage/plugin-permission-node/alpha";
 import {
     catalogEntityDeletePermission,
 } from '@backstage/plugin-catalog-common/alpha';
+import {
+    daiDeployViewPermission
+} from "@digital-ai/plugin-dai-deploy-common";
 
 const backend = createBackend();
 
@@ -43,6 +46,8 @@ backend.add(import('@backstage/plugin-permission-backend/alpha'));
 backend.add(import('@backstage/plugin-search-backend/alpha'));
 backend.add(import('@backstage/plugin-search-backend-module-catalog/alpha'));
 backend.add(import('@backstage/plugin-search-backend-module-techdocs/alpha'));
+backend.add(import('@digital-ai/plugin-dai-deploy-backend'));
+
 class CustomPermissionPolicy implements PermissionPolicy {
     async handle(
         request: PolicyQuery,
@@ -56,6 +61,14 @@ class CustomPermissionPolicy implements PermissionPolicy {
                     claims: user?.identity.ownershipEntityRefs ?? []
                 }),
 
+            );
+        }
+        if (isPermission(request.permission, daiDeployViewPermission)) {
+            return createCatalogConditionalDecision(
+                request.permission,
+                catalogConditions.isEntityOwner({
+                    claims: user?.identity.ownershipEntityRefs ?? []
+                }),
             );
         }
 
@@ -76,4 +89,5 @@ const customPermissionBackendModule = createBackendModule({
     },
 });
 backend.add(customPermissionBackendModule);
+
 backend.start();

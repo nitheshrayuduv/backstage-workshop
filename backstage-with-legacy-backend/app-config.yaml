@@ -113,4 +113,4 @@ permission:
 daiDeploy:
   host: http://localhost:4516
   username: admin
-  password: desired-admin-password
+  password: admin
