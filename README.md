@@ -27,15 +27,15 @@ docker run -e "ADMIN_PASSWORD=admin" -e "ACCEPT_EULA=Y" -p 5516:5516 -d --name x
 ```shell
 cd backstage-with-legacy-backend
 ```
-#### 2. Configure the deploy  and release instance from previous step or else configure the existing instance by adding the following to your app-config.yaml files.
+#### 2. Configure the deploy and release instance from previous step or else configure the existing instance by adding the following to your app-config.yaml files.
 ```yaml
 daiDeploy:
   host: http://<deployhost>:4516
   username: 'admin'
   password: 'admin'
 daiRelease:
-  host: http://localhost:5516
-  token: rpa_862c5cd8b6e76f551d4f4b2e862e1e8a34be3972
+  host: http://<releasehost>:5516
+  token: rpa_862c5cd8b6e76f551d4f4b2e862e1e8a34be3972 # Generated token from the release instance.
 ```
 #### 3. Run the following command to start the backstage app with deploy plugin installed.
 ```shell
@@ -56,15 +56,15 @@ yarn dev
 ```shell
 cd backstage-with-new-backend
 ```
-#### 2. Configure the deploy instance from previous step or else configure the existing instance by adding the following to your app-config.yaml files.
+#### 2. Configure the deploy and release instance from previous step or else configure the existing instance by adding the following to your app-config.yaml files.
 ```yaml
 daiDeploy:
   host: http://<deployhost>:4516
   username: 'admin'
   password: 'admin'
 daiRelease:
-  host: http://localhost:5516
-  token: rpa_862c5cd8b6e76f551d4f4b2e862e1e8a34be3972
+  host: http://<releasehost>:5516
+  token: rpa_862c5cd8b6e76f551d4f4b2e862e1e8a34be3972 # Generated token from the release instance.
 ```
 #### 3. Run the following command to start the backstage app with deploy plugin installed.
 ```shell
