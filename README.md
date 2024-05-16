@@ -1,25 +1,25 @@
-# backstage-workshop
+# Backstage Workshop
 
 ## Setup Digital-ai Deploy [optional]
 ### 1. Run the following command to run deploy in docker container. [More details on docker images of xl-deploy](https://hub.docker.com/r/xebialabs/xl-deploy)
 ```shell
-docker run -e "ADMIN_PASSWORD=admin" -e "ACCEPT_EULA=Y" -p 4516:4516 --name xld xebialabs/xl-deploy:24.1
+docker run -e "ADMIN_PASSWORD=admin" -e "ACCEPT_EULA=Y" -p 4516:4516 -d --name xld xebialabsunsupported/xl-deploy:24.1
 ```
 
 ### 2. Run the following command to create Application, Infrastructure, Environment  and deploy the application in the created Environment using Digital-ai Deploy. 
 #### Run the command from the root directory.
 ```shell
-docker pull xebialabs/xl-client:24.1
+docker pull xebialabsunsupported/xl-client:24.1
 ```
 ```shell
-docker run  -v $(pwd):$(pwd) -w $(pwd) xebialabs/xl-client:24.1 apply -f deploy/deploy-application.yaml --xl-deploy-url http://<deployhost>:4516/ -name xlcli
+docker run  -v $(pwd):$(pwd) -w $(pwd) xebialabsunsupported/xl-client:24.1 apply -f deploy/deploy-application.yaml --xl-deploy-url http://<deployhost>:4516/ -name xlcli
 ```
 Note: Before Running the above command please update  "http://deployhost:4516/" with actual deploy url.
 
 ## Setup Digital-ai Release [optional]
 ### 1. Run the following command to run deploy in docker container. [More details on docker images of xl-release](https://hub.docker.com/r/xebialabs/xl-release)
 ```shell
-docker run -e "ADMIN_PASSWORD=admin" -e "ACCEPT_EULA=Y" -p 5516:5516 --name xlr-23.3 xebialabsunsupported/xl-release:24.1
+docker run -e "ADMIN_PASSWORD=admin" -e "ACCEPT_EULA=Y" -p 5516:5516 -d --name xlr-23.3 xebialabsunsupported/xl-release:24.1
 ```
 
 ## Setup backstage using legacy backend system.
@@ -45,9 +45,11 @@ yarn install
 yarn dev
 ```
 
-#### 4. View the Active Deployment in Backstage app.
+#### 4. View the Digital-ai Deploy - Active Deployment in Backstage app.
 ![Active Deployment](deploy/img/deployment_active.png)
 
+#### 5. View the Digital-ai Release - Active Release in Backstage app.
+![Active Release](release/img/active-release.png)
 
 ## Setup backstage using New backend system.
 #### 1. Run the following command from root directory
@@ -72,7 +74,10 @@ yarn install
 yarn dev
 ```
 
-#### 4. View the Active Deployment in Backstage app.
+#### 4. View the Digital-ai Deploy - Active Deployment in Backstage app.
 ![Active Deployment](deploy/img/deployment_active.png)
+
+#### 5. View the Digital-ai Release - Active Release in Backstage app.
+![Active Release](release/img/active-release.png)
 
 
