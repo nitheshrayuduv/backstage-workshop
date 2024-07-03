@@ -4320,10 +4320,10 @@
     pkginfo "^0.4.1"
     uid2 "^1.0.0"
 
-"@digital-ai/plugin-dai-deploy-backend@^0.1.2":
-  version "0.1.2"
-  resolved "https://npm.pkg.github.com/download/@digital-ai/plugin-dai-deploy-backend/0.1.2/f8fd4d9d324df2ac67b12551e1e17033a2ca764f#f8fd4d9d324df2ac67b12551e1e17033a2ca764f"
-  integrity sha512-ywoXfs/xNLqmlu2cxuPA84cw3a9tSyRG+MbGtKoQOBvLSCvN8NA/1u9VVZx30upA5ENk6eq0kwJx492xTq5xSQ==
+"@digital-ai/plugin-dai-deploy-backend@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@digital-ai/plugin-dai-deploy-backend/-/plugin-dai-deploy-backend-0.1.4.tgz#c7c1a9cac051459877218197dbd51e3beb25be57"
+  integrity sha512-PMaxeCpLvGd4lkRNNFpxvXpudc1gLXeZA9KgCgsEuGWZQz6uq/GoHrkVX6gtFGW1AzuGcvV5EbLgRXP0PHb5vA==
   dependencies:
     "@backstage/backend-common" "^0.19.5"
     "@backstage/backend-plugin-api" "^0.6.12"
@@ -4333,7 +4333,7 @@
     "@backstage/plugin-auth-node" "^0.4.8"
     "@backstage/plugin-permission-common" "^0.7.12"
     "@backstage/plugin-permission-node" "^0.7.24"
-    "@digital-ai/plugin-dai-deploy-common" "0.1.1"
+    "@digital-ai/plugin-dai-deploy-common" "0.1.2"
     "@types/express" "*"
     express "^4.17.1"
     express-promise-router "^4.1.0"
@@ -4341,19 +4341,19 @@
     winston "^3.2.1"
     yn "^4.0.0"
 
-"@digital-ai/plugin-dai-deploy-common@0.1.1", "@digital-ai/plugin-dai-deploy-common@^0.1.0":
-  version "0.1.1"
-  resolved "https://npm.pkg.github.com/download/@digital-ai/plugin-dai-deploy-common/0.1.1/81916fecaa781127db8eef9e0165ed091c405a2f#81916fecaa781127db8eef9e0165ed091c405a2f"
-  integrity sha512-sPoK4pd6aw84dL5WfXgqVwMQPkGzM6+Dfy9uLRvwKrsYN6HNt6Kf0cHks1VqjQJj7QE+viIS0jcLtuYG3wsOrw==
+"@digital-ai/plugin-dai-deploy-common@0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@digital-ai/plugin-dai-deploy-common/-/plugin-dai-deploy-common-0.1.2.tgz#7359206f0d9abcd2a5a857eae102a3f88b998ad3"
+  integrity sha512-HCcoyP2NceVlqa6cNRFi6cWyDMw1uGxVRjN3Ds9IZYWBTOmAmOvhHoJo53V6MlTF+Gtza257WSXA/9XzRsHotA==
   dependencies:
     "@backstage/plugin-catalog-common" "^1.0.21"
     "@backstage/plugin-permission-common" "^0.7.12"
     "@backstage/plugin-permission-node" "^0.7.23"
 
-"@digital-ai/plugin-dai-deploy@^0.1.1":
-  version "0.1.1"
-  resolved "https://npm.pkg.github.com/download/@digital-ai/plugin-dai-deploy/0.1.1/53e1b65ca16b423d267fce8459390526eb3fd62d#53e1b65ca16b423d267fce8459390526eb3fd62d"
-  integrity sha512-OfAdrzqm0Pfzf3B+Ym40PJDVcmzz8Wt8WLTadLCGOIB0iJ5XDsRJJ2hfSGGle9CB050XMBzzo4zAN5h7q4pzPQ==
+"@digital-ai/plugin-dai-deploy@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/@digital-ai/plugin-dai-deploy/-/plugin-dai-deploy-0.1.2.tgz#5c26750a8ce7cfb71c356fbb404efe79ee9e3fae"
+  integrity sha512-t3rWZhd+E831nRGzJO8XqWUDi/P+MYJ1lSVeWqn4eECMs6bF8y/xqirdgIAC3GyMypA0F2nrJtW8ttLSsRfxJA==
   dependencies:
     "@backstage/catalog-model" "^1.4.4"
     "@backstage/core-components" "^0.13.5"
@@ -4362,7 +4362,7 @@
     "@backstage/plugin-catalog-react" "^1.10.0"
     "@backstage/plugin-permission-react" "^0.4.20"
     "@backstage/theme" "^0.4.2"
-    "@digital-ai/plugin-dai-deploy-common" "0.1.1"
+    "@digital-ai/plugin-dai-deploy-common" "0.1.2"
     "@material-ui/core" "^4.12.2"
     "@material-ui/icons" "^4.9.1"
     "@material-ui/lab" "4.0.0-alpha.61"
@@ -4374,8 +4374,8 @@
 
 "@digital-ai/plugin-dai-release-backend@^0.1.0":
   version "0.1.0"
-  resolved "https://npm.pkg.github.com/download/@digital-ai/plugin-dai-release-backend/0.1.0/a53098a0ebc7a49bfbdfc9e10162b7267105bb40#a53098a0ebc7a49bfbdfc9e10162b7267105bb40"
-  integrity sha512-eKVIgxriHgk2jvSM/Yopy0n5PnY+Cy4ovyNhf3ZL0hFRbRcrIHZR84ZzOm+Cs1Gmx++NTSXG2oPxf1VZxlxHSQ==
+  resolved "https://registry.yarnpkg.com/@digital-ai/plugin-dai-release-backend/-/plugin-dai-release-backend-0.1.0.tgz#a109150f7afd6d3a78ab8fbd822746ffdba414a5"
+  integrity sha512-AXraMiN2NHgs+U8c4n8wt7GwlQRZEueR7En1CTHdFt5/+EYaXSWfYBlBIaRkzo/eha0kptTL4HaaZu1vIb/UGQ==
   dependencies:
     "@backstage/backend-common" "^0.19.5"
     "@backstage/backend-plugin-api" "^0.6.12"
@@ -4385,8 +4385,7 @@
     "@backstage/plugin-auth-node" "^0.4.8"
     "@backstage/plugin-permission-common" "^0.7.12"
     "@backstage/plugin-permission-node" "^0.7.24"
-    "@digital-ai/plugin-dai-deploy-common" "^0.1.0"
-    "@digital-ai/plugin-dai-release-common" "^0.1.0"
+    "@digital-ai/plugin-dai-release-common" "0.1.0"
     "@types/express" "*"
     express "^4.17.1"
     express-promise-router "^4.1.0"
@@ -4394,10 +4393,10 @@
     winston "^3.2.1"
     yn "^4.0.0"
 
-"@digital-ai/plugin-dai-release-common@^0.1.0":
+"@digital-ai/plugin-dai-release-common@0.1.0":
   version "0.1.0"
-  resolved "https://npm.pkg.github.com/download/@digital-ai/plugin-dai-release-common/0.1.0/fa64bf489f1b32a6a2f12a3230988e128e7d5a24#fa64bf489f1b32a6a2f12a3230988e128e7d5a24"
-  integrity sha512-sl831NJ8+B3wjZjtRATUmXk4BTN6yKyjOOH9Md4icDycJggEWdxV4JsEtWTWW0Fge7UzsgMMOnl07XOcrYjQ4w==
+  resolved "https://registry.yarnpkg.com/@digital-ai/plugin-dai-release-common/-/plugin-dai-release-common-0.1.0.tgz#f87f4fa614968874123d29f2d323c72c055710b9"
+  integrity sha512-vBqb78gktV2jY/Q++AsJGmk5volT74fnj/Oa5QkWaqtxwaekOTIwt/O2dECrhSH3djf9fgNXvFsZAT7NfkUTAw==
   dependencies:
     "@backstage/plugin-catalog-common" "^1.0.21"
     "@backstage/plugin-permission-common" "^0.7.12"
@@ -4405,15 +4404,15 @@
 
 "@digital-ai/plugin-dai-release@^0.1.0":
   version "0.1.0"
-  resolved "https://npm.pkg.github.com/download/@digital-ai/plugin-dai-release/0.1.0/a2843747e493f6c45419cad92cce0fe233e75eb1#a2843747e493f6c45419cad92cce0fe233e75eb1"
-  integrity sha512-b0p0cGBVf5Dl6XRqzLBVkuKjUvMIDI3PJuUQjq9v/vw+t4bnpq+Tt9o28tCUJhli3w5BK4vHC+UjLHsexhWVDg==
+  resolved "https://registry.yarnpkg.com/@digital-ai/plugin-dai-release/-/plugin-dai-release-0.1.0.tgz#c3f3464d5e3e0cad305c2d5bbf73b65424619dda"
+  integrity sha512-LZudwdqnmWEsnHETMdi3VFW9chaqXrj2VnZS3a8rjx5sVuASF0Azk918dVTwlGWqUfCNhY901UinS05GT3iJwQ==
   dependencies:
     "@backstage/core-components" "^0.13.5"
     "@backstage/core-plugin-api" "^1.6.0"
     "@backstage/errors" "^1.2.3"
     "@backstage/plugin-permission-react" "^0.4.20"
     "@backstage/theme" "^0.4.2"
-    "@digital-ai/plugin-dai-release-common" "^0.1.0"
+    "@digital-ai/plugin-dai-release-common" "0.1.0"
     "@emotion/react" "^11.11.4"
     "@emotion/styled" "^11.11.0"
     "@material-ui/core" "^4.12.2"
@@ -10173,7 +10172,7 @@ apg-lite@^1.0.3:
     "@backstage/plugin-techdocs-react" "^1.1.16"
     "@backstage/plugin-user-settings" "^0.8.1"
     "@backstage/theme" "^0.5.1"
-    "@digital-ai/plugin-dai-deploy" "^0.1.1"
+    "@digital-ai/plugin-dai-deploy" "^0.1.2"
     "@digital-ai/plugin-dai-release" "^0.1.0"
     "@material-ui/core" "^4.12.2"
     "@material-ui/icons" "^4.9.1"
