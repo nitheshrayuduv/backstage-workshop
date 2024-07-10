@@ -49,11 +49,20 @@ cd backstage-with-legacy-backend
 ```yaml
 daiDeploy:
   host: http://<deployhost>:4516
-  username: 'admin'
-  password: 'admin'
+  username: '<username>'
+  password: '<password>'
+  
 daiRelease:
-  host: http://<releasehost>:5516
-  token: rpa_862c5cd8b6e76f551d4f4b2e862e1e8a34be3972 # Generated token from the release instance.
+   instances:
+      - name: 'Production'
+        host: http://<releasehost>:5516/
+        token: <ACCESS-TOKEN> # Generated token from the release instance.
+      - name: 'QE'
+        host: http://<releasehost>:5516/
+        token: <ACCESS-TOKEN> # Generated token from the release instance.
+      - name: 'Staging'
+        host: http://<releasehost>:5516/
+        token: <ACCESS-TOKEN> # Generated token from the release instance.
 ```
 #### 3. Run the following command to start the backstage app with deploy plugin installed.
 ```shell
