@@ -49,11 +49,20 @@ cd backstage-with-legacy-backend
 ```yaml
 daiDeploy:
   host: http://<deployhost>:4516
-  username: 'admin'
-  password: 'admin'
+  username: '<username>'
+  password: '<password>'
+  
 daiRelease:
-  host: http://<releasehost>:5516
-  token: rpa_862c5cd8b6e76f551d4f4b2e862e1e8a34be3972 # Generated token from the release instance.
+   instances:
+      - name: 'Production'
+        host: http://<releasehost>:5516/
+        token: <ACCESS-TOKEN> # Generated token from the release instance.
+      - name: 'QE'
+        host: http://<releasehost>:5516/
+        token: <ACCESS-TOKEN> # Generated token from the release instance.
+      - name: 'Staging'
+        host: http://<releasehost>:5516/
+        token: <ACCESS-TOKEN> # Generated token from the release instance.
 ```
 #### 3. Run the following command to start the backstage app with deploy plugin installed.
 ```shell
@@ -67,7 +76,7 @@ yarn dev
 ![Active Deployment](deploy/img/deployment_active.png)
 
 #### 5. View the Digital-ai Release - Active Release in Backstage app.
-![Active Release](release/img/active-release.png)
+![image](https://github.com/digital-ai/backstage-workshop/assets/88083340/7ae3c5d2-c73f-4f1c-adba-a4046c6e05df)
 
 ## Setup backstage using New backend system.
 #### 1. Run the following command from root directory
@@ -96,6 +105,17 @@ yarn dev
 ![Active Deployment](deploy/img/deployment_active.png)
 
 #### 5. View the Digital-ai Release - Active Release in Backstage app.
-![Active Release](release/img/active-release.png)
+![image](https://github.com/digital-ai/backstage-workshop/assets/88083340/7ae3c5d2-c73f-4f1c-adba-a4046c6e05df)
 
 
+## Documentation Links
+
+**Digital.ai Deploy:**
+
+* [Deploy Integration with Backstage](https://docs.digital.ai/bundle/devops-deploy-version-v.24.1/page/deploy/concept/xl-deploy-backstage-overview.html)
+* [Adding Deploy to Your Backstage IDP](https://docs.digital.ai/bundle/devops-deploy-version-master/page/deploy/concept/xl-deploy-backstage-plugins.html)
+
+**Digital.ai Release:**
+
+* [Overview](https://docs.digital.ai/bundle/devops-release-version-v.24.1/page/release/concept/release-backstage-overview.html)
+* [Adding Release Plugin to Your Backstage IDP](https://docs.digital.ai/bundle/devops-release-version-v.24.1/page/release/concept/release-backstage-plugin.html)
