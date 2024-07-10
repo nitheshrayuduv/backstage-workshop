@@ -107,4 +107,14 @@ yarn dev
 #### 5. View the Digital-ai Release - Active Release in Backstage app.
 ![Active Release](release/img/active-release.png)
 
+## Documentation Links
 
+**Digital.ai Deploy:**
+
+* [Deploy Integration with Backstage](https://docs.digital.ai/bundle/devops-deploy-version-v.24.1/page/deploy/concept/xl-deploy-backstage-overview.html)
+* [Adding Deploy to Your Backstage IDP](https://docs.digital.ai/bundle/devops-deploy-version-master/page/deploy/concept/xl-deploy-backstage-plugins.html)
+
+**Digital.ai Release:**
+
+* [Overview](https://docs.digital.ai/bundle/devops-release-version-v.24.1/page/release/concept/release-backstage-overview.html)
+* [Adding Release Plugin to Your Backstage IDP](https://docs.digital.ai/bundle/devops-release-version-v.24.1/page/release/concept/release-backstage-plugin.html)
