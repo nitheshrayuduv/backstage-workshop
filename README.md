@@ -76,7 +76,7 @@ yarn dev
 ![Active Deployment](deploy/img/deployment_active.png)
 
 #### 5. View the Digital-ai Release - Active Release in Backstage app.
-![Active Release](release/img/active-release.png)
+![image](https://github.com/digital-ai/backstage-workshop/assets/88083340/7ae3c5d2-c73f-4f1c-adba-a4046c6e05df)
 
 ## Setup backstage using New backend system.
 #### 1. Run the following command from root directory
@@ -105,7 +105,8 @@ yarn dev
 ![Active Deployment](deploy/img/deployment_active.png)
 
 #### 5. View the Digital-ai Release - Active Release in Backstage app.
-![Active Release](release/img/active-release.png)
+![image](https://github.com/digital-ai/backstage-workshop/assets/88083340/7ae3c5d2-c73f-4f1c-adba-a4046c6e05df)
+
 
 ## Documentation Links
 
