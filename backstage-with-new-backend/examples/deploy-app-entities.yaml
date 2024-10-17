@@ -2,7 +2,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: Deploy-Application-TestCmd-2
+  name: Deploy-Application-TestCmd-22
   annotations:
     dai-deploy/ci-id: 'test-cmd'
 spec:
