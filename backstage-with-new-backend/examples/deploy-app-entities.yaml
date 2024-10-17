@@ -2,10 +2,10 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: Deploy-Application-TestCmd
+  name: Deploy-Application-TestCmd-2
   annotations:
     dai-deploy/ci-id: 'test-cmd'
 spec:
   type: website
   lifecycle: experimental
-  owner: user:development/guest2
+  owner: user:development/guest
