@@ -1,0 +1,11 @@
+# https://backstage.io/docs/features/software-catalog/descriptor-format#kind-component
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Deploy-Application-TestCmd-223w
+  annotations:
+    dai-deploy/ci-id: 'test-cmd'
+spec:
+  type: website
+  lifecycle: experimental
+  owner: user:development/guestw
