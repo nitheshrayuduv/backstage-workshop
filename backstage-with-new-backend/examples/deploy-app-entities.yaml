@@ -8,4 +8,4 @@ metadata:
 spec:
   type: website
   lifecycle: experimental
-  owner: user:development/guest2
+  owner: guests
